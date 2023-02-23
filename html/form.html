@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+<!-- for 랑 id 랑 같아야 연계가 된다-->
+    <form action="/tacos">
+
+    <button type="button">Don't Submit</button>
+
+
+    <p>
+        <label for ="username">username</label>
+        <input id="username" type="text" placeholder="username" name="username">
+    </p>
+    <button>middle</button>
+    <p>
+        <label for="password">password</label>
+        <input id="password" type="password" placeholder="password" name="password">
+    </p>
+    <p>
+        <label for="color">color</label>
+        <input id="color" type="color" name="color">
+    </p>
+    <p>
+        <label>
+            Number :
+            <input type="number" placeholder="number" name="num">
+        </label>
+
+    </p>
+    
+    <button type="submit">submit</button>
+    </form>
+    <hr>
+    <button>outside</button>
+    <br>
+    cannot send 
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h1>Search</h1>
+
+    <h2>Naver Search</h2>
+    <form action="https://search.naver.com/search.naver">
+        <input type="text" name="query">
+        <button>serach naver</button>
+    </form>
+
+    <br>
+    <h2>Google Search</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="text" name="q">
+        <button>search google</button>
+
+    </form>
+    <br>
+    <h2>Youtube Search</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search" name="search_query">
+        <button>search youtube</button>
+        <!-- 엔터로 이동할 수 있다 -->
+
+    </form>
+</body>
+
+</html>
