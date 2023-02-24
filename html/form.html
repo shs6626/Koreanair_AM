@@ -29,6 +29,21 @@
         <label for="color">color</label>
         <input id="color" type="color" name="color">
     </p>
+
+    <p>
+        <label>
+            <input type="number" placeholder="enter a number" name="num" min="1" max="100" step="5">
+        </label>
+        
+    </p>
+
+    <p>
+        <label for="request"></label>
+        <br>
+        <textarea id="request" rows="10" cols="40" name="Req" placeholder="type something">sdf</textarea>
+    </p>
+
+
     <p>
         <label>
             Number :
@@ -70,6 +85,63 @@
         <!-- 엔터로 이동할 수 있다 -->
 
     </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" id="agree" name="agree_tos" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">xs :</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">s :</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">m :</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <br>
+        <p>
+            <label for="meal">Select Meal</label>
+            <select name="food" id="meal">
+                <option value="fish">fish</option>
+                <option value="veg" selected>vegetarian</option>
+                <option value="steak">steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" name="cheese_level" id="cheese" min="1" max="100" value="70">
+        </p>
+
+
+        <button>Submit</button>
+
+
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+
+        </p>
+
+        <p>
+            <input type="url" required placeholder="url">
+            <input type="email" required>
+        </p>
+        
+        <button>submit</button>
+
+
+
+    </form>
+
+
 </body>
 
 </html>
