@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>create</h2>
+    <script>
+        var arsenal = {
+            "forward" : "jesus",
+            "mid" : "xhaka",
+            "ace" : "saka"
+        };
+
+        document.write("arsenal FW : " +arsenal.forward + "<br>");
+        document.write("arsenal CDM : " +arsenal.mid + "<br>");
+        arsenal.goalkeeper = "ramsedale";
+        document.write("arsenal GK : " +arsenal.goalkeeper + "<br>");
+        arsenal["the legend"] = "Henry";
+        document.write("arsenal legend :" + arsenal["the legend"] + "<br>");
+
+    </script>
+
+
+    <h2>iterate</h2>
+
+    <script>
+
+        for(var key in arsenal) {
+            document.write(key + " : " + arsenal[key] + "<br>");
+        }
+
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+        arsenal.showme = function () {
+
+            for (var key in this) {
+                document.write(key + " : " + this[key] + "<br>");
+            }
+
+
+        }
+        arsenal.showme();
+    </script>
+
+</body>
+</html>
